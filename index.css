@@ -27,7 +27,7 @@ body {
     background-repeat: repeat-y; /* 重复 */
     z-index: -1;
     opacity: 0.4;
-}
+} 
 
 .c-nav {
     height: 45px;
