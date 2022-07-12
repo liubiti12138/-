@@ -1,0 +1,57 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+}
+
+/* 背景透明度修改：https://www.digitalocean.com/community/tutorials/how-to-change-a-css-background-images-opacity */
+.contianer {
+    width: 100%;
+    height: calc(100vh);
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.contianer:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./jay.jpeg);
+    background-size: 100% 100%;
+    background-repeat: repeat-y; /* 重复 */
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.c-nav {
+    height: 45px;
+    padding: 0px 20px;
+    width: 100%;
+    opacity: 1;
+    /* 透明度 */
+    background-color: #ffa32a;
+    display: flex;
+    justify-content: space-between;
+    /* 水平方向居中  */
+    align-items: center;
+    /* 垂直方向居中   baseline: 贴着头 */
+}
+
+.c-nav a {
+    padding: 0 !important;
+    /* width: 120px; */
+}
+
+#aud{
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+}
+
+
